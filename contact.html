@@ -46,6 +46,25 @@
         margin-left: 15%;
         text-align: left;
       }
+      @media (min-width: 350px) {
+        .card {
+          width: 78vw;
+        }
+        table {
+          margin-left: 0%;
+          font-size: 0.85rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .card {
+          width: 34rem;
+        }
+        table {
+          margin-left: 0%;
+          font-size: 1rem;
+        }
+      }
+
       .btn-primary {
         background-color: rgba(240, 104, 54, 0.885);
         border: 0.05rem solid rgb(184, 55, 8);
@@ -100,187 +119,94 @@
       </header>
 
       <main role="main" class="inner cover margin-top">
-        <div class="container marketing margin-top">
-          <h1 class="title">Get In Touch</h1>
-          <!-- <div class="row">
-            <div class="col-lg-4">
-              <img
-                class="rounded-circle margin-bottom"
-                src="img/food1.jpg"
-                alt="food"
-                width="140"
-                height="140"
-              />
-              <h2>Food</h2>
-              <p>
-                What you eat defines who you are. Who are you exactly? Food and
-                lifestyles goes hand in hand and we are always ready and
-                definately willing to help with that. Always at your service.
-              </p>
-              <p>
-                <a class="btn btn-secondary" href="#" role="button"
-                  >View details &raquo;</a
-                >
-              </p>
-            </div>
-
-            <div class="col-lg-4">
-              <img
-                class="rounded-circle margin-bottom"
-                src="img/e2.jpg"
-                alt="food"
-                width="140"
-                height="140"
-              />
-              <h2>Health</h2>
-              <p>
-                Health is Wealth. All members of our community need to be
-                healthy at all times. how do we get this done? Food, exercise,
-                lifestyles and more. Follow us closely, we have your back.
-              </p>
-              <p>
-                <a class="btn btn-secondary" href="#" role="button"
-                  >View more... &raquo;</a
-                >
-              </p>
-            </div>
-
-            <div class="col-lg-4">
-              <img
-                class="rounded-circle margin-bottom"
-                src="img/f1.jpg"
-                alt="food"
-                width="140"
-                height="140"
-              />
-              <h2>Fashion</h2>
-              <p>
-                All the fashion ideas needed to slay and shine is right here at
-                your finger tips. At items & more we need our family looking
-                good at all times. semper. Be a King or Queen at all times.
-              </p>
-              <p>
-                <a class="btn btn-secondary" href="#" role="button"
-                  >View more... &raquo;</a
-                >
-              </p>
-            </div>
-          </div> -->
-          <div id="form-heading">
-            <p class="title">
-              How can we be of service to you? Would love to hear from you.
-            </p>
-          </div>
-          <!-- <div id="form">
-            <form action="">
+        <h1 class="title">Get In Touch</h1>
+        <div id="form-heading">
+          <p class="title">
+            How can we be of service to you? Would love to hear from you.
+          </p>
+        </div>
+        <form method="" action="POST">
+          <div class="form-row">
+            <div class="col-md-12 mb-6">
+              <label for="validationDefault01">Full Name</label>
               <input
                 type="text"
+                class="form-control"
+                id="validationDefault01"
                 name="name"
-                id=""
-                placeholder="Fullname e.g Jason"
+                placeholder="Mark"
+                required
               />
+            </div>
+            <div class="col-md-12 mb-6">
+              <label for="validationDefault02">Email Address</label>
               <input
                 type="email"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="example@gmail.com"
                 name="email"
-                id=""
-                placeholder="Email Address"
+                required
               />
-              <input type="text" name="subject" id="" placeholder="subject" />
-              <input
-                type="text"
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12 mb-6">
+              <label for="validationTextarea">Message</label>
+              <textarea
+                class="form-control"
+                id="validationTextarea"
                 name="message"
-                id=""
-                placeholder="Drop a message"
+                placeholder="Drop a message here ..."
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck2"
+                required
               />
-
-              <button type="submit">SEND</button>
-            </form>
-          </div> -->
-          <form>
-            <div class="form-row">
-              <div class="col-md-12 mb-6">
-                <label for="validationDefault01">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="validationDefault01"
-                  name="name"
-                  placeholder="Mark"
-                  required
-                />
-              </div>
-              <div class="col-md-12 mb-6">
-                <label for="validationDefault02">Email Address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="validationDefault02"
-                  placeholder="example@gmail.com"
-                  name="email"
-                  required
-                />
-              </div>
+              <label class="form-check-label" for="invalidCheck2">
+                Subscribe to our newsletter
+              </label>
             </div>
-            <div class="form-row">
-              <div class="col-md-12 mb-6">
-                <label for="validationTextarea">Message</label>
-                <textarea
-                  class="form-control"
-                  id="validationTextarea"
-                  name="message"
-                  placeholder="Drop a message here ..."
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="invalidCheck2"
-                  required
-                />
-                <label class="form-check-label" for="invalidCheck2">
-                  Subscribe to our newsletter
-                </label>
-              </div>
-            </div>
-            <button class="btn btn-primary margin-top" type="submit">
-              SEND
-            </button>
-          </form>
-          <hr class="featurette-divider" />
-          <div class="card" style="width: 35rem">
-            <div class="card-body">
-              <h5 class="card-title">Contact Details</h5>
-              <table>
-                <tr>
-                  <td>Phone Number:</td>
-                  <td>&nbsp;</td>
-                  <td>08182278240</td>
-                </tr>
-                <tr>
-                  <td>Address:</td>
-                  <td>&nbsp;</td>
-                  <td>Amuwo Odofin, Lagos</td>
-                </tr>
-                <tr>
-                  <td>Email:</td>
-                  <td>&nbsp;</td>
-                  <td>contact@itemsandmoreng.com</td>
-                </tr>
-              </table>
-            </div>
-            <!-- <button class="btn btn-primary margin-top" type="submit">
+          </div>
+          <button class="btn btn-primary margin-top" type="submit">SEND</button>
+        </form>
+        <hr class="featurette-divider" />
+        <div class="card" style="">
+          <div class="card-body">
+            <h5 class="card-title">Contact Details</h5>
+            <table>
+              <tr>
+                <td>Phone Number:</td>
+                <td>&nbsp;</td>
+                <td>08182278240</td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td>&nbsp;</td>
+                <td>Amuwo Odofin, Lagos</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>&nbsp;</td>
+                <td>contact@itemsandmoreng.com</td>
+              </tr>
+            </table>
+          </div>
+          <!-- <button class="btn btn-primary margin-top" type="submit">
               Live Chat
             </button> -->
-          </div>
         </div>
       </main>
       <footer class="mastfoot mt-auto">
-        <div class="inner">
+        <div class="inner" style="margin-top: 5%">
           <p>
             Follow us on &nbsp; &nbsp;
             <a href="https://www.instagram.com/itemsandmoreng/" target="_blank"
